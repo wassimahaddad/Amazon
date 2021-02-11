@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.upper-bar {
+  display: flex;
+  border: 1px solid black;
+  height: 60px;
+  background: #131921;
+}
+
+.upper-bar .logo {
+  width: 135px;
+  height: 100%;
+  border: 1px solid red;
+}
+.upper-bar .deliver-to {
+  width: 115px;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.upper-bar .departments-dropdown {
+  width: 55px;
+  height: 40px;
+  border: 1px solid red;
+  align-self: center;
+}
+.upper-bar .search-bar {
+  width: 1145px;
+  height: 40px;
+  border: 1px solid red;
+  align-self: center;
+}
+.upper-bar .search-bar .search-field {
+  width: 100%;
+  height: 100%;
+}
+.upper-bar .search-button {
+  width: 45px;
+  height: 40px;
+  border: 1px solid red;
+  align-self: center;
+}
+
+.lower-bar {
+  border: 1px solid black;
+  height: 40px;
+  background: #232f3e;
+}
+
+.breadcrumbs {
+  border: 1px solid black;
+  height: 25px;
+  margin: 0 250px;
+}
+
+.product-block {
+  display: flex;
+  border: 1px solid black;
+  height: 100vh;
+  margin: 0 250px;
+}
+
+.product-block .thumbnails {
+  border: 1px solid black;
+  height: 100%;
+  width: 3%;
+}
+.product-block .main-image {
+  border: 1px solid black;
+  height: 100%;
+  width: 45%;
+}
+.product-block .product-description {
+  border: 1px solid black;
+  height: 100%;
+  width: 35%;
+}
+.product-block .sidebar {
+  border: 1px solid black;
+  height: 100%;
+  width: 17%;
+}
+
+.carousel-4stars {
+  border: 1px solid black;
+  height: 350px;
+  margin: 0 250px;
+}
+.carousel-related {
+  border: 1px solid black;
+  height: 350px;
+  margin: 0 250px;
+}
