@@ -6,6 +6,9 @@
 :root {
   --searchbar-color: #febd69;
   --searchicon-color: #393735;
+  --grey: #838383;
+  --white: #f3f3f3;
+  --white-text: #fbfbfc;
 }
 
 * {
@@ -27,6 +30,8 @@
   background: #131921;
 }
 
+/* logo */
+
 .upper-bar .logo {
   width: 120px;
   margin-left: 10px;
@@ -36,14 +41,16 @@
 }
 
 .upper-bar .logo:hover {
-  border: 2px solid white;
+  border: 1.5px solid white;
 }
+
+/*  Deliver to */
 
 .upper-bar .deliver-to {
   display: flex;
   width: 80px;
   height: 90%;
-  margin-left: 10px;
+  margin-left: 5px;
   padding-left: 5px;
   padding-top: 10px;
   align-self: center;
@@ -65,12 +72,17 @@
 }
 
 .upper-bar .deliver-to:hover {
-  border: 2px solid white;
+  border: 1.5px solid white;
 }
+
+/* ---------- Search bar */
+
+/*  departments dropdown */
+
 .upper-bar .departments-dropdown {
   width: 55px;
   height: 40px;
-  margin-left: 15px;
+  margin-left: 30px;
   border: 0.5px solid #838383;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -81,8 +93,10 @@
   align-self: center;
 }
 
+/* Search search bar */
+
 .upper-bar .search-bar {
-  width: 1145px;
+  width: 1150px;
   height: 40px;
   align-self: center;
 }
@@ -96,6 +110,8 @@
   border: var(--searchbar-color) 3px solid;
 }
 
+/* search button */
+
 .upper-bar .search-button {
   width: 45px;
   height: 40px;
@@ -106,25 +122,92 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/*  Choose Language */
+
 .upper-bar .language-dropdown {
-  width: 80px;
+  display: flex;
+  width: 60px;
   height: 100%;
-  border: 1px solid red;
+  color: var(--grey);
+  padding: 24px 20px 16px 10px;
+  margin-left: 25px;
+  font-size: 12px;
 }
+
+.upper-bar .language-dropdown .triangle {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.upper-bar .language-dropdown:hover {
+  border: 1.5px solid white;
+}
+
+/*  account list */
+
 .upper-bar .accountList {
   width: 125px;
   height: 100%;
-  border: 1px solid red;
+  color: var(--white-text);
+  padding: 14px;
+  margin-left: 10px;
+  font-size: 12px;
 }
+
+.upper-bar .accountList span {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.upper-bar .accountList:hover {
+  border: 1.5px solid white;
+}
+
+/*    Return Orders */
+
 .upper-bar .returnOrders {
-  width: 100px;
+  width: 75px;
   height: 100%;
-  border: 1px solid red;
+  color: var(--white-text);
+  padding: 13px 5px;
+  font-size: 12px;
+  margin-left: 10px;
 }
+
+.upper-bar .returnOrders span {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.upper-bar .returnOrders:hover {
+  border: 1.5px solid white;
+}
+
+/*    Cart    */
 .upper-bar .cart {
-  width: 100px;
+  display: flex;
+  width: 90px;
   height: 100%;
-  border: 1px solid red;
+  color: var(--white-text);
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content: right;
+}
+
+.upper-bar .cart:hover {
+  border: 1.5px solid white;
+}
+
+.upper-bar .cart img {
+  align-self: center;
+  padding-left: 10px;
+}
+
+.upper-bar .cart .cart-text {
+  padding-top: 26px;
+  padding-right: 20px;
+  font-weight: bolder;
 }
 
 .lower-bar {
