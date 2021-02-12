@@ -210,11 +210,51 @@
   font-weight: bolder;
 }
 
+/* ---------- Lower bar */
+
 .lower-bar {
-  border: 1px solid black;
+  width: 100%;
+  display: inline-flexbox;
   height: 40px;
   background: #232f3e;
+  padding: 5px;
 }
+
+.lower-bar .menu {
+  display: inline-flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.lower-bar .menu .menu-items li {
+  color: var(--white-text);
+  display: inline-block;
+  list-style: none;
+  padding: 00 10px;
+}
+
+.lower-bar .menu .menu-items li span {
+  font-size: 18px;
+}
+
+.lower-bar .menu .menu-items li:hover {
+  border: 1.5px solid white;
+}
+
+.lower-bar .covid {
+  color: var(--white-text);
+  padding: 5px;
+}
+
+.lower-bar .menu .covid:hover {
+  border: 1.5px solid white;
+}
+
+/* Breadcrums */
+
 .breadcrumbs {
   border: 1px solid black;
   height: 25px;
