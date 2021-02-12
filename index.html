@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Amazon</title>
+    <title>MyAmazon</title>
   </head>
   <body>
     <div class="page-container">
       <div class="upper-bar">
         <div class="logo"></div>
-        <div class="deliver-to"></div>
-        <div class="departments-dropdown"></div>
-        <div class="search-bar">
+        <div class="deliver-to">
+          <i class="fa fa-map-marker"></i>
+          <p><span>Deliver to</span> Israel</p>
+        </div>
+        <div id="departments" class="departments-dropdown" >All &#9660</div>
+     
+        <div id="searchbar" class="search-bar">
           <input class="search-field" type="text" />
         </div>
-        <div class="search-button"></div>
+        <div class="search-button"><i class="fa fa-search"></i></div>
         <div class="language-dropdown"></div>
         <div class="accountList"></div>
         <div class="returnOrders"></div>
