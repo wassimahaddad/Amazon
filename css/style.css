@@ -15,6 +15,7 @@
   --text-green: #297800;
   --text-primary: #ffffff;
   --text-grey: #565e53;
+  --button-grey: #eaecef;
 }
 
 * {
@@ -420,12 +421,118 @@
 }
 
 /* Side-bar */
-.product-block .sidebar {
-  border: 1px solid black;
+.product-block .sidebar-area {
+  /* border: 1px solid black; */
   height: 100%;
   width: 17%;
 }
 
+.product-block .sidebar-area .side-bar {
+  margin-top: 25px;
+  height: 580px;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+.product-block .sidebar-area .side-price {
+  padding-top: 15px;
+  color: var(--price-color);
+  font-size: 20px;
+}
+
+.product-block .sidebar-area .import-text {
+  padding-right: 20px;
+  font-size: 15px;
+}
+
+.product-block .sidebar-area .side-details {
+  color: var(--text-green);
+  font-size: 15px;
+}
+
+.product-block .sidebar-area .arrives {
+  font-size: 13px;
+  padding: 20px 0;
+}
+.product-block .sidebar-area .arrives span {
+  font-weight: bold;
+}
+
+.product-block .sidebar-area .stock-status {
+  font-size: 20px;
+  color: var(--text-green);
+  padding: 10px 0;
+}
+
+.product-block .sidebar-area .quantity {
+  border: 1px solid black;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  background: var(--button-grey);
+  border-radius: 10px;
+  text-align: center;
+  padding: 3px;
+}
+
+.product-block .sidebar-area .add-to-cart {
+  padding-top: 20px;
+}
+
+.product-block .sidebar-area .secure-transaction span {
+  color: var(--text-green);
+  font-size: 14px;
+  padding-left: 20px;
+}
+.product-block .sidebar-area .shipping-info-block {
+  display: flex;
+  font-size: 12px;
+  padding-top: 20px;
+  color: var(--text-grey);
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid whitesmoke;
+}
+
+.product-block .sidebar-area .shipping-info-block .shipping-info-right {
+  padding-left: 10px;
+}
+
+.product-block .sidebar-area .gift-receipt-block {
+  padding-top: 5px;
+  font-size: 13px;
+  border-bottom: 1.5px solid whitesmoke;
+}
+.product-block .sidebar-area .gift-receipt-block .line1 {
+  color: var(--text-green);
+}
+
+.product-block .sidebar-area .gift-receipt-block .line2 {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.product-block .sidebar-area .deliver-to-country {
+  padding-top: 10px;
+  border-bottom: 1.5px solid whitesmoke;
+}
+.product-block .sidebar-area .deliver-to-country span {
+  font-size: 13px;
+  padding-left: 10px;
+  color: var(--text-green);
+}
+
+.product-block .sidebar-area button {
+  width: 90%;
+  height: 30px;
+  margin-top: 7px;
+  padding-right: 10px;
+  border-radius: 5px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* product Block */
 .product-block .product-description .compatibility-block {
   padding-top: 10px;
   padding-bottom: 10px;
