@@ -281,9 +281,9 @@
 /* ----------- Product Block ------------------*/
 .product-block {
   display: flex;
-
-  height: 120vh;
+  height: 110vh;
   margin: 0 220px;
+  border-bottom: 2px solid whitesmoke;
 }
 
 /* Thumbnails */
@@ -420,6 +420,31 @@
   transform: scale(0.8);
 }
 
+.product-block .product-description .compatibility-block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  font-size: 14px;
+  border-bottom: 1.5px solid whitesmoke;
+}
+
+.product-block .product-description .compatibility-block .compatibility-left p {
+  font-weight: bold;
+}
+
+.product-block
+  .product-description
+  .compatibility-block
+  .compatibility-left
+  .line2 {
+  padding-top: 18px;
+}
+
+.product-block .product-description .about-item {
+  padding-right: 10px;
+}
+
 /* Side-bar */
 .product-block .sidebar-area {
   /* border: 1px solid black; */
@@ -532,27 +557,64 @@
   padding-left: 10px;
 }
 
-/* product Block */
-.product-block .product-description .compatibility-block {
+.product-block .sidebar-area .new-from {
+  margin-top: 20px;
+  height: 50px;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
+  padding-left: 15px;
+}
+
+.product-block .sidebar-area .new-from span {
+  color: var(--price-color);
+}
+
+.product-block .sidebar-area .share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.product-block .sidebar-area .share .share-text {
+  padding-bottom: 5px;
+  padding-right: 5px;
   font-size: 14px;
-  border-bottom: 1.5px solid whitesmoke;
+  color: var(--text-blue);
 }
 
-.product-block .product-description .compatibility-block .compatibility-left p {
+.product-block .sidebar-area .other-sellers {
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+}
+
+.product-block .sidebar-area .other-sellers .amazon-seller {
+  padding: 10px;
+  font-size: 14px;
   font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid whitesmoke;
 }
 
-.product-block
-  .product-description
-  .compatibility-block
-  .compatibility-left
-  .line2 {
-  padding-top: 18px;
+.product-block .sidebar-area .other-sellers .seller-offer1 {
+  height: 70px;
+  border-bottom: 2px solid whitesmoke;
 }
+.product-block .sidebar-area .other-sellers .seller-offer2 {
+  height: 70px;
+}
+
+.product-block .sidebar-area .side-bar-end {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.product-block .sidebar-area .side-bar-end button {
+  width: 50%;
+  text-align: center;
+}
+
 /* Carousel 1 */
 
 .carousel-4stars {
