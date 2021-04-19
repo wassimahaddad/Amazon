@@ -1,0 +1,26 @@
+//4. Write a function called vowelCount which accepts a string as an argument.
+//The function should return an objectwhich has the count of the number of vowel’s that are in the string.
+//The key should be the vowel and the value should be the count. e.g. {a:3, o:2,u:4}.Should not be case sensitive.
+
+const vowelCount = (a) => {
+  const arr = a.split("");
+  arr.forEach((letter) => {
+    const obj = {};
+    if (letter == "a") {
+      obj["a"] = obj["a"] + 1 || 1;
+    }
+    if (letter == "e") {
+      obj["e"] = obj["e"] + 1 || 1;
+    }
+    if (letter == "i") {
+      obj["i"] = obj["i"] + 1 || 1;
+    }
+    if (letter == "o") {
+      obj["o"] = obj["o"] + 1 || 1;
+    }
+    if (letter == "u") {
+      obj["u"] = obj["u"] + 1 || 1;
+    }
+    return obj;
+  });
+};
